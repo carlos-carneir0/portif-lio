@@ -1,0 +1,17 @@
+.sobre-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.sobre-container h1 {
+  color: #1b1b1b;
+}
+
+.sobre-container p {
+  color: #444;
+  line-height: 1.6;
+}
