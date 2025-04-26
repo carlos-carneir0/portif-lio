@@ -1,6 +1,47 @@
 .navbar {
-  background: #222;
+  background: rgba(34,34,34,0.65);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
   padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  transition: opacity 0.4s, transform 0.4s;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-fade.navbar-hidden {
+  opacity: 0;
+  pointer-events: auto;
+  transform: translateY(-40px);
+  /* Mantém a área sensível ao hover mesmo invisível */
+}
+
+.navbar {
+  /* aumenta a área sensível ao hover quando oculta */
+  min-height: 48px;
+}
+
+.navbar-fade.navbar-visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
 }
 
 .navbar-list {
@@ -20,5 +61,6 @@
 }
 
 .navbar-list li a:hover {
-  color: #61dafb;
+  color: #fb6161;
 }
+

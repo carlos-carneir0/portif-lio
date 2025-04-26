@@ -11,9 +11,9 @@ function App() {
       <Navbar />
       <main>
         <section id="inicio"><Inicio /></section>
-<section id="sobre"><Sobre /></section>
-<section id="projetos"><Projetos /></section>
-<section id="contato"><Contato /></section>
+        <section id="sobre"><Sobre /></section>
+        <section id="projetos"><Projetos /></section>
+        <section id="contato"><Contato /></section>
       </main>
     </>
   );

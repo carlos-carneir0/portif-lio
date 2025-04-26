@@ -1,0 +1,17 @@
+section#sobre {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  background: #f8f8f8;
+}
+
+section#sobre h1 {
+  color: #1b1b1b;
+  text-align: center;
+}
+
+section#sobre p {
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+}
