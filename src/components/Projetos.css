@@ -35,7 +35,7 @@ section#projetos h1 {
   transition:
     opacity 0.9s cubic-bezier(.4,0,.2,1),
     transform 0.9s cubic-bezier(.4,0,.2,1),
-    box-shadow 0.2s, transform 0.2s;
+    box-shadow 0.2s, transform 0.5s;
 }
 .card.reveal {
   opacity: 1;
