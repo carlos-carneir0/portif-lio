@@ -1,15 +1,87 @@
+body {
+  background: #F3F3F3;
+}
+
 .contato-container {
-  max-width: 500px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff9f0;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 100%;
+  margin: 0;
+  padding: 4rem 0;
+  background: #F3F3F3;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contato-container h1 {
-  color: #b5722d;
+  color: #000000;
+  font-size: 2.7rem;
 }
+
+.contato-email {
+  color: #ad4343;
+  font-weight: 500;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.contato-social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.contato-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: none;
+  box-shadow: none;
+  transition: box-shadow 0.2s, transform 0.18s, filter 0.2s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+.contato-icon-btn.linkedin {
+  background: none;
+}
+.contato-icon-btn.github {
+  background: none;
+}
+.contato-icon-btn:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.18);
+  filter: brightness(1.2);
+}
+
+.contato-icon {
+  width: 2.1em;
+  height: 2.1em;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.07));
+}
+
+@media (max-width: 600px) {
+  .contato-social-icons {
+    gap: 1rem;
+    width: 100%;
+  }
+  .contato-icon-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .contato-icon {
+    width: 1.6em;
+    height: 1.6em;
+  }
+}
+
 
 .contato-container p {
   color: #444;

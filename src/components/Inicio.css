@@ -41,7 +41,7 @@
   display: inline-block;
   width: 1ch;
   animation: blink 0.9s steps(1) infinite;
-  color: #fb6161;
+  color: #ad4343;
 }
 
 @keyframes blink {

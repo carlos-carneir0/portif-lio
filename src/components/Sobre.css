@@ -8,10 +8,12 @@ section#sobre {
 section#sobre h1 {
   color: #1b1b1b;
   text-align: center;
+  font-size: 2.7rem;
 }
 
 section#sobre p {
   color: #444;
   line-height: 1.6;
   text-align: center;
+  font-size: 1.25rem;
 }
