@@ -27,6 +27,13 @@ body {
   word-break: break-all;
 }
 
+.contato-tel {
+  color: #ad4343;
+  font-weight: 500;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
 .contato-social-icons {
   display: flex;
   gap: 1.5rem;
@@ -49,12 +56,7 @@ body {
   text-decoration: none;
   position: relative;
 }
-.contato-icon-btn.linkedin {
-  background: none;
-}
-.contato-icon-btn.github {
-  background: none;
-}
+
 .contato-icon-btn:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.13);
   transform: translateY(-4px) scale(1.18);
@@ -82,37 +84,9 @@ body {
   }
 }
 
-
-.contato-container p {
-  color: #444;
-}
-
 .contato-container form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 1rem;
-}
-
-.contato-container input,
-.contato-container textarea {
-  padding: 0.7rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.contato-container button {
-  background: #b5722d;
-  color: #fff;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.contato-container button:hover {
-  background: #a05e1a;
 }

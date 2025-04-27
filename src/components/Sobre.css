@@ -9,6 +9,21 @@ section#sobre h1 {
   color: #1b1b1b;
   text-align: center;
   font-size: 2.7rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section#sobre h1::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.35em;
+  width: 150px;
+  height: 4px;
+  border-radius: 2px;
+  background: #ad4343;
 }
 
 section#sobre p {

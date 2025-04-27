@@ -6,9 +6,24 @@ section#projetos {
 }
 
 section#projetos h1 {
-  color: #1c3a5e;
+  color: #000000;
   text-align: center;
   font-size: 2.7rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section#projetos h1::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.35em;
+  width: 150px;
+  height: 4px;
+  border-radius: 2px;
+  background: #ad4343;
 }
 
 .projetos-cards {
