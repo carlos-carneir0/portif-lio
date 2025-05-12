@@ -37,6 +37,34 @@
   z-index: 0;
 }
 
+.particle {
+  position: absolute;
+  background-color: #ad4343;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 0;
+  animation: fadeInOut var(--duration) infinite ease-in-out;
+  animation-delay: var(--delay);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  25% {
+    opacity: var(--max-opacity);
+  }
+  75% {
+    opacity: var(--max-opacity);
+    transform: translate(var(--move-x), var(--move-y));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--move-x), var(--move-y));
+  }
+}
+
 .cursor {
   display: inline-block;
   width: 1ch;
