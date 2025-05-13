@@ -33,8 +33,8 @@ function Projetos() {
       <div className="projetos-cards">
         <div className={`card${revealFirst ? ' reveal reveal-delay-1' : ''}`}>
           <img src={require('../assets/placeholder.png')} alt="Projeto 1" className="card-img" />
-          <h2>Projeto 1</h2>
-          <p>Descrição breve do projeto 1.</p>
+          <h2>TCC</h2>
+          <p>Meu TCC do curso técnico em Desenvolvimento de Sistemas</p>
           <a href="#" className="card-btn" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
         </div>
         <div className={`card${revealSecond ? ' reveal reveal-delay-2' : ''}`}>

@@ -20,6 +20,30 @@ body {
   font-size: 2.7rem;
 }
 
+.contato-container p {
+  font-size: 1.2rem;
+  color: #ad4343;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0.6rem 0;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .contato-container h1 {
+    font-size: 2rem;
+  }
+  .contato-container p {
+    font-size: 1.05rem;
+    padding: 0 4vw;
+    text-align: center;
+  }
+  .contato-email, .contato-tel {
+    font-size: 1.05rem;
+    word-break: break-all;
+  }
+}
+
 .contato-email {
   color: #ad4343;
   font-weight: 500;

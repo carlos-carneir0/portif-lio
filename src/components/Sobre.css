@@ -29,6 +29,29 @@ section#sobre h1::after {
 section#sobre p {
   color: #444;
   line-height: 1.6;
-  text-align: center;
+  text-align: justify;
   font-size: 1.25rem;
+}
+
+.sobre-texto {
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .sobre-texto {
+    padding: 0 4vw;
+    text-align: center;
+    max-width: 98vw;
+  }
+  .sobre-texto p {
+    text-align: center;
+    font-size: 1.05rem;
+  }
 }

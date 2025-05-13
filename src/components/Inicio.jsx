@@ -167,8 +167,11 @@ function Inicio() {
           />
         ))}
       </div>
-      <h1 className={`typewriter${reveal ? ' reveal' : ''}`}>{text}<span className="cursor">|</span></h1>
-      <p className={reveal ? 'reveal' : ''}>Este é o início do seu site em React. Use a navegação para conhecer mais!</p>
+      
+      <div className={`typewriter-group${reveal ? ' reveal' : ''}`}>
+        <h1>Olá, meu nome é Carlos</h1>
+        <h2 className="typewriter">{text}<span className="cursor">|</span></h2>
+      </div>
     </div>
   );
 }

@@ -6,29 +6,42 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  text-align: center;
-  overflow: hidden;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: visible !important;
+  box-sizing: border-box;
 }
 
 .typewriter {
-  font-size: clamp(1.5rem, 6vw, 3.5rem);
+  font-size: clamp(1.1rem, 3vw, 1.7rem);
   font-weight: bold;
   letter-spacing: 1px;
   word-break: break-word;
-  max-width: 90vw;
+  max-width: 95vw;
   line-height: 1.1;
+  text-align: left;
 }
 
-.typewriter,
+.typewriter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 7vw;
+  width: 100%;
+  max-width: 95vw;
+  box-sizing: border-box;
+}
+
+.typewriter-group,
 .inicio-container p {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1s cubic-bezier(.4,0,.2,1), transform 1s cubic-bezier(.4,0,.2,1);
 }
 
-.typewriter.reveal,
+.typewriter-group.reveal,
 .inicio-container p.reveal {
   opacity: 1;
   transform: translateY(0);
@@ -38,6 +51,10 @@
   position: absolute;
   inset: 0;
   z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .particle {
@@ -84,12 +101,19 @@
 
 @media (max-width: 600px) {
   .typewriter {
-    font-size: clamp(1.1rem, 7vw, 2.1rem);
-    max-width: 98vw;
+    font-size: clamp(1rem, 6vw, 1.2rem);
+    max-width: 99vw;
+    text-align: left;
+  }
+  .typewriter-group {
+    margin-left: 4vw;
+    max-width: 99vw;
   }
   .inicio-container p {
-    font-size: clamp(0.95rem, 4vw, 1.1rem);
-    max-width: 98vw;
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    max-width: 99vw;
+    text-align: left;
+    margin-left: 2vw;
   }
   .cursor {
     width: 1em;
@@ -98,8 +122,10 @@
 
 .inicio-container p {
   color: #ccc;
-  font-size: clamp(1rem, 3.5vw, 1.4rem);
+  font-size: clamp(0.95rem, 2.8vw, 1.1rem);
   z-index: 1;
-  max-width: 90vw;
+  max-width: 95vw;
   word-break: break-word;
+  text-align: left;
+  margin-left: 4vw;
 }
