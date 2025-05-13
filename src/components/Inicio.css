@@ -13,9 +13,12 @@
 }
 
 .typewriter {
-  font-size: 2.7rem;
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
   font-weight: bold;
   letter-spacing: 1px;
+  word-break: break-word;
+  max-width: 90vw;
+  line-height: 1.1;
 }
 
 .typewriter,
@@ -67,9 +70,11 @@
 
 .cursor {
   display: inline-block;
-  width: 1ch;
+  width: 0.9em;
   animation: blink 0.9s steps(1) infinite;
   color: #ad4343;
+  font-size: 1em;
+  vertical-align: middle;
 }
 
 @keyframes blink {
@@ -77,8 +82,24 @@
   50% { opacity: 0; }
 }
 
+@media (max-width: 600px) {
+  .typewriter {
+    font-size: clamp(1.1rem, 7vw, 2.1rem);
+    max-width: 98vw;
+  }
+  .inicio-container p {
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    max-width: 98vw;
+  }
+  .cursor {
+    width: 1em;
+  }
+}
+
 .inicio-container p {
   color: #ccc;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3.5vw, 1.4rem);
   z-index: 1;
+  max-width: 90vw;
+  word-break: break-word;
 }
